@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Inter, sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: rgb(192, 248, 225);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.corpo-relogio-digital{
+    box-shadow: 0px 8px 10px #1616168a;
+    border-radius: 3px;
+    background-color: transparent;
+}
+
+.calendario{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 550px;
+    height: 160px;
+}
+
+.calendario .calendario-data{
+    height: 130px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:#ffff;
+    background-color: #272727;
+    border-radius: 5px;
+    box-shadow: 0px 8px 10px #161616bb;
+}
+
+.calendario span{
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.calendario span.tempo{
+    font-size: 20px;
+}
+
+.relogio{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 550px;
+    height: 160px;
+}
+
+.relogio .relogio-tempo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+    width: 150px;
+    color:#ffff;
+    background-color: #272727;
+    border-radius: 5px;
+    box-shadow: 0px 8px 10px #161616bb;
+}    
+
+.relogio span{
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.relogio span.tempo{
+    font-size: 20px;
+}
+
