@@ -5,6 +5,7 @@ const segundos = document.getElementById('segundos')
 const dia = document.getElementById('dia')
 const mes = document.getElementById('mes')
 const ano = document.getElementById('ano')
+const mesAno = ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez']
 
 const relogio = setInterval(function(){
     let tempoHoje = new Date()
@@ -24,7 +25,16 @@ const relogio = setInterval(function(){
     segundos.textContent = seg
 
     dia.textContent = day
-    mes.textContent = mont+1
     ano.textContent = year
+    const mesAtual = mont
+    
+    mesAno.map((el, i)=>{
+        if(i == mesAtual){
+            mes.textContent = el 
+        }
+    })
+    
+
+    
 
 })
